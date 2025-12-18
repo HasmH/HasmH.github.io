@@ -3,87 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hasam.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <title>Hasam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .work-item {
+            margin-bottom: 40px;
+        }
+        
+        .work-item h3 {
+            font-size: 1.3em;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        
+        .work-item a {
+            display: inline-block;
+            margin-right: 30px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .work-item a:hover {
+            text-decoration: underline;
+        }
+
+        .links {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .links a {
+            display: inline-block;
+            margin-right: 30px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-    <div id="title">Hasam.</div><br>
-    <div id="links">
-        <a href="#skills">About Me</a>
-        <a href="#work" style="margin:0px 60px;">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-    </div>
-
-    <center>
-    <div id="particles-js"></div>
-        <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-            Software Engineer <br>
+    <div class="container">
+        <h1>Hasam Hasam</h1>
+        <p>Software Professional | Medical Student</p>
+        
+        <h2>About Me</h2>
+        <p>I have been working as a software professional for 4 years across various startups and enterprises, delivering and leading projects to various types of end users - from everyday Australians, company employees, all the way to small business owners.</p>
+        <p>I thoroughly enjoy building software and working in a high performing team. However, as of recently, I entertained the idea of becoming a doctor. I wanted something more chaotic, kinesthetic, and human. </p>
+        <p>After a few tries, I received an offer to study medicine - an offer I didn't want to turn down.</p>
+        <p>I have a strong interest in - <b>software design, distributed systems, devops, automation and api development<b></p>
+        <p>Given my current trajectory, I am also interested in learning and building at the intersection of medicine and technology.</p>
+        <p>Feel free to connect - I am always open to collaborate: <b>h.hasam@outlook.com</b></p>
+        
+        <h2>My Work</h2>
+        <div class="work-item">
+            <h3>witty word</h3>
+            <p>Inspired by the word game - contexto - witty word is a word game where users are challenged to give the most irrelevant, compared to the game's word. It does this with semantics via BERT, a bidirectional transformer embedding model.</p>
+            <a href="https://wittyword.io/" target="_blank">wip: witty word</a>
+            <a href="https://contexto.me/en/" target="_blank">reference: contexto</a>
         </div>
-    
-    </center>
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <div id="portfolio">
-             <div id="skills">
-                 <h1>About Me</h1>   
-                 <div>
-                        <p>
-                            Early career software engineer. Below are some old projects, more to come, this sites under construction..
-                        </p>
-                 </div> 
-             </div>
-         
-              <div id="work">
-                 <h1>Projects</h1>
-
-                 <div class="project">
-                 <h2>Flockr</h2>
-                 <div>I helped in developing the back-end for a communication tool called Flockr. I was responsible for engineering and testing the messaging and channel functionality. The project followed agile methodology for it's SDLC.</div>
-                 <button class="btn_one" onclick="window.open('https://sheltered-stream-93520.herokuapp.com/login', '_blank')">Visit Project</button>
-                </div>
-
-                <div class="project">
-                    <h2>Joe Rogan Tribute Page</h2>
-                    <div>As apart of freecodecamp.org's "Responsive Web Design Certification", I had created my first ever website using HTML, CSS, and Javascript. 
-                        I just wanted to make something light-hearted, nothing too serious, and challenge my newly learnt web development skills. 
-                    </div>
-                    <button class="btn_one" onclick="window.open('tribute_page.html', '_blank')">Visit Project</button>
-                    <button class="btn_two" onclick="window.open('https://github.com/HasmH/web-dev-journey/blob/master/tribute_page.html', '_blank')">Code</button>
-                </div>
-
-                <div class="project">
-                    <h2>Ethical Hacking Project - Sneaky Video Game</h2>
-                    <div>A university project for my security engineering course. I decided to create a keylogger, and cookie stealer that is disguised as a simple video game using Python. The data is exfiltrated over a network via email. 
-                        The aim of this project is to educate students and myself on the dangers of malicious software and fundamental security concepts. Ofcourse I will not be linking the final project (just the source code) as I don't want you keylogging yourself :)
-                    </div>
-                    <button class="btn_one" onclick="window.open('https://www.youtube.com/playlist?list=PLWFGhqiHyIelLM40o_86uf88sSzfIQml3', '_blank')">YouTube Series</button>
-                    <button class="btn_two" onclick="window.open('https://github.com/HasmH/COMP6841-Something-Awsome-Project/blob/main/sneaky.py', '_blank')">Code</button>
-                </div>
-             </div>
-         
-              <div id="contact">
-                 <h1>Contact</h1> 
-                 <form action="mailto:h.hasam@outlook.com" method="POST" enctype="multipart/form-data" name="Contact Me!">
-                     <input type="text" placeholder="Name" required>
-                     <input type="email" placeholder="Email" required><br>
-                     <textarea placeholder="Your Message" required rows="5"></textarea><br>
-                     <button class="btn_one">Send</button>
-                 </form> 
-             </div>
+        <div class="work-item">
+            <h3>Hey Doc, FYI</h3>
+            <p>A review and wages database for junior doctors and registrars in australia.</p>
+            <a href="https://heydoc.fyi/" target="_blank">Hey Doc, FYI</a>
+        </div>
+        
+        <div class="work-item">
+            <h3>Compass Construction</h3>
+            <p>A static site for a sydney based construction company.</p>
+            <a href="https://compassconstruction.com.au/" target="_blank">Compass Construction</a>
+        </div>
+        <div class="links">
+            <a href="https://github.com/HasmH" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/hasam-hasam/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
     </div>
-    <div id="footer">
-        <i>"In the depth of winter, I finally learned that within me there lay an invincible summer." - Albert Camus </i><br><br> <a href="https://github.com/HasmH" target="_blank">HasmH</a>
-    </div>
-<script src="index.js" type="text/javascript"></script>
 </body>
 </html>
